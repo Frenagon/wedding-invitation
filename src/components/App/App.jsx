@@ -2,9 +2,10 @@ import Homepage from "../Homepage";
 import Invitation from "../Invitation";
 import Instructions from "../Instructions";
 import { Routes, useNavigation } from "../../context/Navigation";
+import NavigationButton from "../NavigationButton/NavigationButton";
 
 function App() {
-  const { route } = useNavigation();
+  const { route, isFirstRoute, isLastRoute } = useNavigation();
 
   let routeComponent;
   switch (route) {
@@ -21,7 +22,13 @@ function App() {
       throw new Error(`Route ${route} is not defined`);
   }
 
-  return routeComponent;
+  return (
+    <>
+      {isFirstRoute || <NavigationButton back />}
+      {routeComponent}
+      {isLastRoute || <NavigationButton />}
+    </>
+  );
 }
 
 export default App;
