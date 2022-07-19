@@ -31,8 +31,8 @@ function App() {
 
   return (
     <>
-      {NavBar}
-      {routeComponent}
+      <div>{NavBar}</div>
+      <div>{routeComponent}</div>
     </>
   );
 }
