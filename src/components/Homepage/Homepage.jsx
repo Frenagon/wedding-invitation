@@ -1,5 +1,8 @@
+import { Logo } from "./Homepage.styles";
+import LogoImage from "../../resources/images/logo.png";
+
 function Homepage() {
-  return <div>This will be the Homepage</div>;
+  return <Logo src={LogoImage} alt="Logo" />;
 }
 
 export default Homepage;

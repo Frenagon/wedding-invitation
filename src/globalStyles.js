@@ -6,15 +6,24 @@ const GlobalStyles = createGlobalStyle`
   html {
     height: 100%;
     width: 100%;
+    margin: 0px;
     background: #F7DBF0;
     background-image: url(${Paper});
-    margin: 0px;
   }
 
   body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
+    height: inherit;
+    width: inherit;
+    margin: inherit;
+  }
+
+  div#root {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

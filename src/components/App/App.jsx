@@ -4,15 +4,7 @@ import Instructions from "../Instructions";
 import { Routes, useNavigation } from "../../context/Navigation";
 
 function App() {
-  const { route, setRoute } = useNavigation();
-
-  const NavBar = Object.keys(Routes).map((route, index) => {
-    return (
-      <button key={route} onClick={() => setRoute(Routes[route])}>
-        {route}
-      </button>
-    );
-  });
+  const { route } = useNavigation();
 
   let routeComponent;
   switch (route) {
@@ -29,12 +21,7 @@ function App() {
       throw new Error(`Route ${route} is not defined`);
   }
 
-  return (
-    <>
-      <div>{NavBar}</div>
-      <div>{routeComponent}</div>
-    </>
-  );
+  return routeComponent;
 }
 
 export default App;
