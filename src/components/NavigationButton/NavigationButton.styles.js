@@ -4,6 +4,7 @@ export const NavigationButtonStyled = styled.button`
   border: none;
   background: transparent;
   padding: 0;
+  cursor: pointer;
   position: absolute;
   ${({ back }) => (back ? "left: 10px" : "right: 10px")}
 `;
