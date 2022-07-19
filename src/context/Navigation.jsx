@@ -31,7 +31,11 @@ function NavigationProvider({ children }) {
     );
   }, [route, setRoute]);
 
-  const value = { route, setRoute, goBack, goNext };
+  const routeValues = Object.values(Routes);
+  const isFirstRoute = routeValues.indexOf(route) === 0;
+  const isLastRoute = routeValues.indexOf(route) === routeValues.length - 1;
+
+  const value = { route, setRoute, goBack, goNext, isFirstRoute, isLastRoute };
   return (
     <NavigationContext.Provider value={value}>
       {children}
