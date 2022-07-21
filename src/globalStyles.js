@@ -1,5 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
-import CornerBorderImage from "./resources/images/corner-border.png";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   html {
@@ -13,25 +12,6 @@ const GlobalStyles = createGlobalStyle`
     width: inherit;
     margin: inherit;
   }
-`;
-
-export const CornerBorder = styled.div`
-  position: absolute;
-  ${({ top, bottom, left, right }) => {
-    return (
-      (top ? "top: 0;" : "") +
-      (bottom ? "bottom: 0;" : "") +
-      (left ? "left: 0;" : "") +
-      (right ? "right: 0;" : "")
-    );
-  }};
-  transform: rotate(${({ rotate }) => rotate});
-  background-image: url(${CornerBorderImage});
-  background-repeat: no-repeat;
-  background-size: 75px;
-  height: 75px;
-  width: 75px;
-  margin: 10px;
 `;
 
 export default GlobalStyles;
