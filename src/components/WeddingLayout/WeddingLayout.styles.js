@@ -5,12 +5,15 @@ import Paper from "../../resources/images/paper.png";
 export const WeddingLayout = styled.div`
   height: inherit;
   width: inherit;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #f7dbf0;
   background-image: url(${Paper});
+  transition: transform ease-out 750ms;
+  transform: translate(${({ closed }) => (closed ? "-100%" : "0%")});
 `;
 
 export const CornerBorder = styled.div`

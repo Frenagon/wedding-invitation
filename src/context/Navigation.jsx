@@ -1,9 +1,9 @@
 import * as React from "react";
 
 const Routes = Object.freeze({
-  HOMEPAGE: Symbol("HOMEPAGE"),
-  INVITATION: Symbol("INVITATION"),
-  INSTRUCTIONS: Symbol("INSTRUCTIONS"),
+  HOMEPAGE: 1,
+  INVITATION: 2,
+  INSTRUCTIONS: 3,
 });
 
 const NavigationContext = React.createContext();

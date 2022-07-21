@@ -3,9 +3,9 @@ import NavigationButton from "../NavigationButton";
 import { Logo } from "./Homepage.styles";
 import LogoImage from "../../resources/images/logo.png";
 
-function Homepage() {
+function Homepage({ closed }) {
   return (
-    <WeddingLayout>
+    <WeddingLayout closed={closed}>
       <Logo src={LogoImage} alt="Logo" />
       <NavigationButton />
     </WeddingLayout>

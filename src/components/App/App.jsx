@@ -6,16 +6,13 @@ import { Routes, useNavigation } from "../../context/Navigation";
 function App() {
   const { route } = useNavigation();
 
-  switch (route) {
-    case Routes.HOMEPAGE:
-      return <Homepage />;
-    case Routes.INVITATION:
-      return <Invitation />;
-    case Routes.INSTRUCTIONS:
-      return <Instructions />;
-    default:
-      throw new Error(`Route ${route} is not defined`);
-  }
+  return (
+    <>
+      <Instructions closed={route > Routes.INSTRUCTIONS} />
+      <Invitation closed={route > Routes.INVITATION} />
+      <Homepage closed={route > Routes.HOMEPAGE} />
+    </>
+  );
 }
 
 export default App;

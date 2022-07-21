@@ -3,9 +3,9 @@ import {
   WeddingLayout as WeddingLayoutContainer,
 } from "./WeddingLayout.styles";
 
-function WeddingLayout({ children }) {
+function WeddingLayout({ children, closed }) {
   return (
-    <WeddingLayoutContainer>
+    <WeddingLayoutContainer closed={closed}>
       <CornerBorder top left />
       <CornerBorder top right rotate="90deg" />
       {children}
