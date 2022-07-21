@@ -2,33 +2,20 @@ import Homepage from "../Homepage";
 import Invitation from "../Invitation";
 import Instructions from "../Instructions";
 import { Routes, useNavigation } from "../../context/Navigation";
-import NavigationButton from "../NavigationButton/NavigationButton";
 
 function App() {
-  const { route, isFirstRoute, isLastRoute } = useNavigation();
+  const { route } = useNavigation();
 
-  let routeComponent;
   switch (route) {
     case Routes.HOMEPAGE:
-      routeComponent = <Homepage />;
-      break;
+      return <Homepage />;
     case Routes.INVITATION:
-      routeComponent = <Invitation />;
-      break;
+      return <Invitation />;
     case Routes.INSTRUCTIONS:
-      routeComponent = <Instructions />;
-      break;
+      return <Instructions />;
     default:
       throw new Error(`Route ${route} is not defined`);
   }
-
-  return (
-    <>
-      {isFirstRoute || <NavigationButton back />}
-      {routeComponent}
-      {isLastRoute || <NavigationButton />}
-    </>
-  );
 }
 
 export default App;

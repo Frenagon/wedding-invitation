@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import Paper from "./resources/images/paper.png";
 import CornerBorderImage from "./resources/images/corner-border.png";
 
 const GlobalStyles = createGlobalStyle`
@@ -7,23 +6,12 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
     width: 100%;
     margin: 0px;
-    background: #F7DBF0;
-    background-image: url(${Paper});
   }
 
-  body {
+  body, div#root {
     height: inherit;
     width: inherit;
     margin: inherit;
-  }
-
-  div#root {
-    height: inherit;
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 `;
 
