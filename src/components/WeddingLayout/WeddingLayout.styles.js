@@ -12,7 +12,7 @@ export const WeddingLayout = styled.div`
   align-items: center;
   background: #f7dbf0;
   background-image: url(${Paper});
-  transition: transform ease-out 750ms;
+  transition: transform ease-in-out 750ms;
   transform: translate(${({ closed }) => (closed ? "-100%" : "0%")});
 `;
 
