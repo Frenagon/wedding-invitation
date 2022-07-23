@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const InvitationContainer = styled.div`
   height: inherit;
   width: inherit;
+  max-width: 1000px;
   margin: 10px;
   padding: 75px 0px;
   display: flex;
