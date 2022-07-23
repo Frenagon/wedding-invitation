@@ -11,7 +11,7 @@ export const InstructionsContainer = styled.div`
   align-items: center;
   font-family: "Indie Flower", cursive;
   color: #393939;
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   text-align: center;
 `;
 
@@ -82,17 +82,22 @@ export const Time = styled.span`
 `;
 
 export const TimelineDescription = styled.div`
-  width: 100px;
+  width: 105px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const TimelineTitle = styled.span``;
+export const TimelineTitle = styled.span`
+  padding-bottom: 2px;
+  padding-top: 18px;
+`;
 
 export const TimelineSubTitle = styled.span`
-  font-size: 0.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.563rem;
 `;
 
 export const TimelineDescriptionSeparator = styled.div`
@@ -135,5 +140,5 @@ export const FooterContainer = styled.div`
 `;
 
 export const NoteTextSmall = styled.span`
-  font-size: 0.563rem;
+  font-size: 0.625rem;
 `;

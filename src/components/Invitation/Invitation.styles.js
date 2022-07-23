@@ -11,7 +11,7 @@ export const InvitationContainer = styled.div`
   align-items: center;
   font-family: "Handlee", cursive;
   color: #393939;
-  font-size: 0.75rem;
+  font-size: 0.813rem;
   text-align: center;
 `;
 
@@ -23,7 +23,7 @@ export const InvitationSection = styled.div`
 
 export const ParentNames = styled(InvitationSection)`
   width: inherit;
-  font-size: 0.688rem;
+  font-size: 0.75rem;
   display: flex;
   justify-content: space-around;
 `;
@@ -38,7 +38,7 @@ export const ParentsGroom = styled.span`
 
 export const SpouceNames = styled(InvitationSection)`
   font-family: "Ms Madi", cursive;
-  font-size: 2rem;
+  font-size: 2.188rem;
   color: #675a34;
 `;
 
@@ -49,12 +49,12 @@ export const LocationSection = styled(InvitationSection)`
 `;
 
 export const FatherName = styled.span`
-  font-size: 0.688rem;
+  font-size: 0.75rem;
 `;
 
 export const FooterSection = styled(InvitationSection)`
   width: inherit;
-  font-size: 0.688rem;
+  font-size: 0.75rem;
   display: flex;
   justify-content: space-evenly;
 `;
