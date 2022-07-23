@@ -49,12 +49,19 @@ function Instructions({ closed }) {
               </TimelineDescription>
             </TimelineSubSection>
             <TimelineSubSection alignLeft>
-              <LinkImage src={Church} alt="Church Icon" paddingLeft />
+              <LinkImage
+                href="https://goo.gl/maps/d6S1UFcxUm8jiP9R7"
+                paddingLeft
+              >
+                <img src={Church} alt="Church Icon" />
+              </LinkImage>
             </TimelineSubSection>
           </TimelineSection>
           <TimelineSection>
             <TimelineSubSection>
-              <LinkImage src={Party} alt="Party Icon" />
+              <LinkImage href="https://goo.gl/maps/wZJ2e9EUHW3Aw6N69">
+                <img src={Party} alt="Party Icon" />
+              </LinkImage>
             </TimelineSubSection>
             <TimelineSubSection alignLeft>
               <TimelineDescription>
@@ -75,15 +82,15 @@ function Instructions({ closed }) {
             </TimelineSubSection>
             <TimelineSubSection alignLeft>
               <TimelineLinkStack paddingLeft>
-                <LinkStackImage>
+                <LinkStackImage href="">
                   <img src={LinkIcon} alt="Link Icon" height="10px" />
                   <img src={LiverpoolLogo} alt="Liverpool Logo" height="16px" />
                 </LinkStackImage>
-                <LinkStackImage>
+                <LinkStackImage href="">
                   <img src={LinkIcon} alt="Link Icon" height="10px" />
                   <img src={AmazonLogo} alt="Amazon Logo" height="17px" />
                 </LinkStackImage>
-                <LinkStackImage>
+                <LinkStackImage href="">
                   <img src={LinkIcon} alt="Link Icon" height="10px" />
                   <img src={SearsLogo} alt="Sears Logo" height="13px" />
                 </LinkStackImage>

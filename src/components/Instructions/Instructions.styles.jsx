@@ -66,9 +66,12 @@ export const TimelineSubSection = styled.div`
   align-items: center;
 `;
 
-export const LinkImage = styled.img`
-  height: 45px;
-  width: 45px;
+export const LinkImage = styled.a`
+  img {
+    height: 45px;
+    width: 45px;
+  }
+
   ${({ paddingLeft }) =>
     paddingLeft ? "padding-left: 10px" : "padding-right: 10px"};
 `;
@@ -108,7 +111,7 @@ export const TimelineLinkStack = styled.div`
     paddingLeft ? "padding-left: 10px" : "padding-right: 10px"}
 `;
 
-export const LinkStackImage = styled.div`
+export const LinkStackImage = styled.a`
   display: flex;
   justify-content: flex-start;
   align-items: center;
