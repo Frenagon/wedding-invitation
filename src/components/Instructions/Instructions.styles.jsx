@@ -35,6 +35,7 @@ export const HeaderImage = styled.img`
 
 export const TimelineContainer = styled.div`
   height: 54vh;
+  min-height: 54%;
   width: inherit;
   display: flex;
   flex-direction: column;
@@ -46,11 +47,13 @@ export const TimelineContainer = styled.div`
 `;
 
 export const TimelineImage = styled.img`
-  height: 54vh;
+  height: inherit;
+  min-height: 40%;
   position: absolute;
 `;
 
 export const TimelineSection = styled.div`
+  min-height: 33%;
   width: inherit;
   display: flex;
   justify-content: center;

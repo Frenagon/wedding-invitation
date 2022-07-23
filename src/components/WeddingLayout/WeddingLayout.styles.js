@@ -5,6 +5,8 @@ import Paper from "../../resources/images/paper.png";
 export const WeddingLayout = styled.div`
   height: inherit;
   width: inherit;
+  min-height: 650px;
+  min-width: 350px;
   position: absolute;
   display: flex;
   flex-direction: column;
