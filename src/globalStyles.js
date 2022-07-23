@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     width: inherit;
     margin: inherit;
     font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
   }
 `;
 
