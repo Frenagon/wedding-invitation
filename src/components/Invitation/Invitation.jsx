@@ -33,7 +33,7 @@ function Invitation({ closed }) {
         <InvitationSection>
           Tienen el honor de invitarlo
           <br />
-          al enalce matrimonial de sus hijos:
+          al enlace matrimonial de sus hijos:
         </InvitationSection>
         <SpouceNames>Myriam y Francisco</SpouceNames>
         <LocationSection>
