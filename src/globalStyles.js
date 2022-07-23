@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     height: inherit;
     width: inherit;
     margin: inherit;
+    font-size: 16px;
   }
 `;
 
