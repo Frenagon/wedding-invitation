@@ -86,17 +86,19 @@ function Instructions({ closed }) {
             </TimelineSubSection>
             <TimelineSubSection alignLeft>
               <TimelineLinkStack paddingLeft>
-                <LinkStackImage href="" target="_blank">
+                <LinkStackImage
+                  href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/50959672?_ga=2.173571046.497749090.1658704652-1772109967.1658704652"
+                  target="_blank"
+                >
                   <img src={LinkIcon} alt="Link Icon" height="10px" />
                   <img src={LiverpoolLogo} alt="Liverpool Logo" height="16px" />
                 </LinkStackImage>
-                <LinkStackImage href="" target="_blank">
+                <LinkStackImage
+                  href="https://www.amazon.com.mx/wedding/francisco-javier-aceves-lópez-myriam-jeanette-cardenaz-sanchez-zapopan-october-2022/registry/20LTQ85QUX0XT"
+                  target="_blank"
+                >
                   <img src={LinkIcon} alt="Link Icon" height="10px" />
                   <img src={AmazonLogo} alt="Amazon Logo" height="17px" />
-                </LinkStackImage>
-                <LinkStackImage href="" target="_blank">
-                  <img src={LinkIcon} alt="Link Icon" height="10px" />
-                  <img src={SearsLogo} alt="Sears Logo" height="13px" />
                 </LinkStackImage>
               </TimelineLinkStack>
             </TimelineSubSection>

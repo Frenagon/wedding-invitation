@@ -113,7 +113,7 @@ export const TimelineLinkStack = styled.div`
   height: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   ${({ paddingLeft }) =>
     paddingLeft ? "padding-left: 10px" : "padding-right: 10px"}
