@@ -7,7 +7,6 @@ import Party from "../../resources/images/party.png";
 import LinkIcon from "../../resources/images/link-icon.png";
 import LiverpoolLogo from "../../resources/images/liverpool-logo.png";
 import AmazonLogo from "../../resources/images/amazon-logo.png";
-import SearsLogo from "../../resources/images/sears-logo.png";
 import {
   FooterContainer,
   HeaderContainer,
