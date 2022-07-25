@@ -12,7 +12,7 @@ export const WeddingLayout = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f7dbf0;
+  background: #ffd6ff;
   background-image: url(${Paper});
   transition: transform ease-in-out 750ms;
   transform: translate(${({ closed }) => (closed ? "-100%" : "0%")});
